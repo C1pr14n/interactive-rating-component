@@ -27,7 +27,7 @@
   </head>
   <body class="main">
     <!-- Rating state start -->
-    <div class="card">
+    <div class="card card-first">
       <figure class="circle-figure"><span>⭐</span></figure>
       <h2>How did we do?</h2>
       <p>
@@ -47,11 +47,19 @@
 
     <!-- Thank you state start -->
 
-    <div class="card rating-card-thankyou hidden">
-      <figure>Image with phone</figure>
-      <p>You selected <span id="rate">4</span> out of 5</p>
-      <h2>Thank you!</h2>
-      <p>
+    <div class="card card-thankyou hidden">
+      <img
+        class="img-card-thankyou"
+        src="/design/illustration-thank-you.svg"
+        alt="picture with a phone"
+      />
+      <div class="label-card-thankyou">
+        <p class="label-text-card-thankyou">
+          You selected <span id="rate">4</span> out of 5
+        </p>
+      </div>
+      <h2 class="title-card-thankyou">Thank you!</h2>
+      <p class="text-card-thankyou">
         We appreciate you taking the time to give a rating. If you ever need
         more support, don't hesitate to get in touch!
       </p>

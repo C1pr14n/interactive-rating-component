@@ -20,6 +20,9 @@
   width: 400px;
   background-color: rgb(31, 40, 55);
   border-radius: 30px;
+}
+
+.card-first {
   padding: 30px;
 
   display: flex;
@@ -85,6 +88,41 @@
 .card-btn:hover {
   background-color: #f4f4f4;
   color: #e67700;
+}
+
+.card-thankyou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.img-card-thankyou {
+  width: 50%;
+  padding-bottom: 20px;
+}
+
+.label-card-thankyou {
+  height: 25px;
+  background-color: #495057;
+  color: #e67700;
+  border-radius: 20px;
+
+  margin-bottom: 15px;
+}
+
+.label-text-card-thankyou {
+  padding: 2px 12px;
+}
+
+.title-card-thankyou {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.text-card-thankyou {
+  text-align: center;
 }
 
 .hidden {
