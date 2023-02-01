@@ -12,28 +12,36 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
 
     <title>Interactive rating component</title>
   </head>
   <body class="main">
     <!-- Rating state start -->
-    <div class="card rating-card">
-      <div class="top"></div>
-      <span>⭐</span>
+    <div class="card">
+      <figure class="circle-figure"><span>⭐</span></figure>
       <h2>How did we do?</h2>
       <p>
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <ul class="rating-list">
-        <li><a>1</a></li>
-        <li><a>2</a></li>
-        <li><a>3</a></li>
-        <li><a>4</a></li>
-        <li><a>5</a></li>
-      </ul>
-      <button>Submit</button>
+      <div class="rating-list">
+        <a href="#" class="rating-btn circle-figure">1</a>
+        <a href="#" class="rating-btn circle-figure">2</a>
+        <a href="#" class="rating-btn circle-figure">3</a>
+        <a href="#" class="rating-btn circle-figure">4</a>
+        <a href="#" class="rating-btn circle-figure">5</a>
+      </div>
+      <button class="card-btn">Submit</button>
     </div>
     <!-- Rating state end -->
 
@@ -41,14 +49,13 @@
 
     <div class="card rating-card-thankyou hidden">
       <figure>Image with phone</figure>
-      <p>You selected 4 out of 5</p>
+      <p>You selected <span id="rate">4</span> out of 5</p>
       <h2>Thank you!</h2>
       <p>
         We appreciate you taking the time to give a rating. If you ever need
         more support, don't hesitate to get in touch!
       </p>
     </div>
-
     <!-- Thank you state end -->
   </body>
 </html>
